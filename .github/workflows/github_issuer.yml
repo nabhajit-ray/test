@@ -1,0 +1,8 @@
+uses: timheuer/issue-notifier@v1
+env:
+  SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+with:
+  fromMailAddress: 'nabhajit@gmail.com'
+  toMailAddress: 'nabhajit.ray@hpe.com
+  subject: 'A new issue was labeled'
+  labelsToMonitor: 'breaking-change,major-bug'
